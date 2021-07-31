@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+#mother{
+    border: 15px dotted orange;
+    border-style: double;
+    background-color: whitesmoke;
+    display: flex;
+    width: 80%;
+    border-radius: 20px;
+}
+
+#child{
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin: 3%;
+    color: orange;
+    font-family: Tahoma;
+    font-size: 180%;
+    margin-top: 3%;
+    text-align: center;
+}
+
+div{
+    margin: 6%;
+}
+
+
+label{
+    display: block; 
+    font-size: 20px ;
+    font-family: Tahoma;
+    font-weight: bold;
+    margin:12% 5%;
+}
+
+#score, #time{
+    border: none;
+    font-size: 20px;
+    width: 40%;
+    outline: none;
+}
+
+.questions{
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+    margin-top: 10%;
+}
+
+/* equal to label effects */
+#equalto{
+    font-size: 30px;
+    display: inline;
+    color: blue;
+}
+
+/* first answers input effects */
+.answers1{
+    border-radius: 3px;
+    height: 8%;
+    float: right;
+    width: 20%;
+    margin-top: -27%;
+    cursor: pointer;
+    padding: 10px;
+    font-size:large;
+    color: red;
+    font-weight: bold;
+}
+/* mermaid one effects */
+#mermaid{
+    width: 35%;
+    position: absolute;
+    bottom: 6%;
+    margin-left: -6%;
+}
+
+/* mermaid two effects */
+#mermaid2{
+    width: 35%;
+    position: absolute;
+    bottom:6%;
+    margin-left: 23%;
+}
+/* tree one effects */
+#tree{
+    position: absolute;
+    bottom: 15%;
+    width: 20%;
+    margin-left: -12%;
+    
+}
+
+/* tree two effects */
+#tree2{
+    position: absolute;
+    bottom: 14%;
+    width: 20%;
+    margin-left: 18%;
+}
+
+/* tree three effects */
+#tree3{
+    position: absolute;
+    bottom: 14%;
+    width: 20%;
+    margin-left: 47%;
+}
+
+
+/* equal to label effects */
+#equalto2{
+    font-size: 40px;
+    display: inline;
+    color: blue;
+}
+
+/* second answers input effects */
+.answers2{
+    border-radius: 3px;
+    height: 8%;
+    float: right;
+    width: 20%;
+    margin-top: -29%;
+    cursor: pointer;
+    padding: 10px;
+    font-size:large;
+    color: red;
+    font-weight: bold;
+}
+/* tree one effect */
+#htree1{
+    float: left;
+    margin-top: -27%;
+    margin-left: 8%;
+}
+/* tree two on the heading effect  */
+#htree2{
+    float: right;
+    margin-top: -27%;
+    margin-right: 7%;
+}
+/* next button effects */
+.btn{
+    padding: 20px;
+    width: 80%;
+    border-radius: 30px;
+    color: white;
+    background-color: red;
+    font-size: 28px;
+    font-family: Georgia;
+    font-weight: bold;
+    outline:none;
+    border: none;
+   float: right;
+}
+
+
+@media(min-width:790px){
+    #mother{
+        width: 500px;
+        height: 80%;
+    }
+
+    h1{
+        font-size: 250%;
+        margin: 1%;
+        
+    }
+    /* mermaid one effects */
+    #mermaid{
+        width:10%;
+        bottom: 10%;
+        margin-left: 3%;
+    }
+    /* tree one effects */
+    #tree{
+        bottom: 15%;
+        width: 8%;
+        margin-left: -3%;
+        
+    }
+    /* tree2 effects */
+    #tree2{
+        bottom: 15%;
+        width: 8%;
+        margin-left: 10%;
+    }
+    /* tree3 effects */
+    #tree3{
+        bottom: 15%;
+        width:8%;
+        margin-left: 23%;
+    }
+    /* mermaid2 effects */
+    #mermaid2{
+        width:10%;
+        bottom: 10%;
+        margin-left:15%;
+    }
+    /* answers1 effects  */
+    .answers1{
+        margin-top: -20%;
+    }
+    /* answers2 effects */
+    .answers2{
+        margin-top: -20%;
+    }
+
+    /* htree one effects */
+    #htree1{
+        margin-top: -20%;
+    }
+
+    /* htree two effects */
+    #htree2{
+        margin-top: -20%;
+    }
+
+    /* next button effects */
+    #next{
+        width: 60%;
+        padding: 10px;
+    }
+    /* questions effects */
+    .questions{
+        margin-top: 1%;
+    }
+
+}
