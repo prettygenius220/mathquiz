@@ -1,37 +1,79 @@
-## Welcome to GitHub Pages
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics Quiz</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./quiz.js" defer></script>
+</head>
+<body>
+    <div id="mother">
+        <div id="child">
+            <h1>Mathematics Quiz</h1>
+   
 
-You can use the [editor on GitHub](https://github.com/prettygenius220/mathquiz/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+    <div id="headtreeDiv">
+        <img src="./images/tree.png" alt="" id="htree1">
+    </div>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <div id="headtreeDiv2">
+        <img src="./images/tree.png" alt="" id="htree2">
+    </div>
 
-### Markdown
+    <div  class="ques">  
+        <p class="questions" id="question1">
+           1 + 1 <label for="#" id="equalto">=</label> 
+        </p>
+        </div>
+        <div id="answerDiv">
+            <input type="text" name="answer" id="answer1st" class="answers1">
+        </div>
+    <div  class="ques2">  
+        <p id="question2" class="questions">
+           1 + 2 <label for="#" id="equalto2" >=</label> 
+        </p>
+        </div>
+        <div id="answerDiv2">
+            <input type="text" name="answer2" id="answer2nd" class="answers2">
+        </div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <!-- <div class="ques3">
+        <p id="question3">
+            1 + 3 <label for="#" id="equalto">=</label>
+        </p>
+    </div> -->
 
-```markdown
-Syntax highlighted code block
+    <!-- <div id="buttonDiv">
+        <button id="next" onclick="determineScore()">Next>></button>
 
-# Header 1
-## Header 2
-### Header 3
+    </div> -->
+    <div id="buttonsDiv">
+        <button id="submit" class="btn" onclick="determineScore()">Done^ ^</button>
 
-- Bulleted
-- List
+    </div>
 
-1. Numbered
-2. List
+    <div id="mermaidDiv">
+        <img src="./images/mermaid.png" alt="" id="mermaid">
 
-**Bold** and _Italic_ and `Code` text
+    </div>
 
-[Link](url) and ![Image](src)
-```
+    <div id="mermaid2Div">
+        <img src="./images/mermaid.png" alt="" id="mermaid2">
+    </div>
+    <div id="treeDiv">
+        <img src="./images/christmas_tree.png" alt="" id="tree">
+    </div>
+    <div id="treeDiv2">
+        <img src="./images/christmas_tree.png" alt="" id="tree2">
+    </div>
+    <div id="treeDiv3">
+        <img src="./images/christmas_tree.png" alt="" id="tree3">
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+    
+    </div>
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/prettygenius220/mathquiz/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+    
+        
+</body>
+</html>
