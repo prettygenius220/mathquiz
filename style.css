@@ -38,11 +38,11 @@ div{
 
 
 label{
-    display: block; 
-    font-size: 20px ;
+    font-size: 10px ;
     font-family: Tahoma;
     font-weight: bold;
-    margin:12% 5%;
+    margin-top: -90%;
+    margin-left: 40%;
 }
 
 #score, #time{
@@ -53,12 +53,15 @@ label{
 }
 
 .questions{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     color: red;
     margin-top: 10%;
 }
-
+/* ques div effects */
+#ques{
+    white-space: nowrap;
+}
 /* equal to label effects */
 #equalto{
     font-size: 30px;
@@ -152,7 +155,7 @@ label{
     margin-top: -27%;
     margin-right: 7%;
 }
-/* next button effects */
+/* all buttons effects */
 .btn{
     padding: 20px;
     width: 80%;
@@ -165,7 +168,17 @@ label{
     outline:none;
     border: none;
    float: right;
+   display: block;
+   
+
 }
+
+/* start button effects */
+/* #start{
+    width: 90%;
+    margin-top: 100%;
+    margin-left: -120%;
+} */
 
 
 @media(min-width:790px){
