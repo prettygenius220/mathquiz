@@ -143,6 +143,15 @@ label{
     color: red;
     font-weight: bold;
 }
+/* wrong style */
+#rong{
+    color: red;
+    font-family: sans-serif;
+}
+#ight{
+    color: green;
+    font-family: sans-serif;
+}
 /* tree one effect */
 #htree1{
     float: left;
