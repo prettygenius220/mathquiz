@@ -37,7 +37,7 @@ function displayDivs(){
         document.getElementById("ques").style.display='block';
         document.getElementById("ques2").style.display='block';
         document.getElementById("startDiv").style.display='none';
-        document.getElementById("nextDiv").style.display='block';
+        document.getElementById("submitDiv").style.display='block';
         alert("If the computer returns 'Wrong' then one or both of your answers are wrong ")
         
 }
@@ -51,6 +51,8 @@ function getNumbers(){
         var firstques = question1.innerHTML = combined1;
         // set the inner value of the second question to...
         var secondques = question2.innerHTML = combined2;
+        return firstques;
+        return secondques;
         
         
 }
@@ -72,7 +74,16 @@ function displayInput(){
                 wrong.style.display = 'block';
                 right.style.display = 'none';
         }
+        // display the next button
+        document.getElementById("nextDiv").style.display='block';
+        // do not display the submit button
+        document.getElementById("submitDiv").style.display='none';
         
 }
-
+ 
+function keepGoing(){
+        wrong.style.display = 'none';
+        right.style.display = 'none';
+        
+}
 
