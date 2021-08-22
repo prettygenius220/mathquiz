@@ -13,14 +13,27 @@ var question2 = document.getElementById("question2");
 // get the label 
 var equal = document.getElementById("equalto");
 // generate random numbers
+function generateRandom() {
+	return Math.floor(Math.random() * 10) + 1;
+}
+
 // first 
-const first = Math.floor(Math.random() * 10) + 1;
+let first;
 // second
-const second = Math.floor(Math.random() * 10) + 1;
+let second;
 // third
-const third = Math.floor(Math.random() * 10) + 1;
+let third;
 // fourth
-const fourth = Math.floor(Math.random() * 10) + 1;
+let fourth;
+
+function initializeVariables() {
+	first = generateRandom();
+	second = generateRandom();
+	third = generateRandom();
+	fourth = generateRandom();
+}
+
+
 
 // get wrong and right divs
 var wrong = document.getElementById("wrong");
@@ -38,11 +51,19 @@ function displayDivs(){
         document.getElementById("ques2").style.display='block';
         document.getElementById("startDiv").style.display='none';
         document.getElementById("submitDiv").style.display='block';
-        alert("If the computer returns 'Wrong' then one or both of your answers are wrong ")
+       
         
 }
 // sets the first and second questions as the random numbers already derived
 function getNumbers(){
+	initializeVariables();
+	// DONT REPEAT YOURSELF IS A PROGRAMMING PRACTISE
+	// THE BEST WAY TO DO THIS IS TO DECLARE ALL YOUR SELECTORS (GETELEMENTBYID OR BY CLASS) AS GLOBAL VARIABLES WHERE ALL FUNCTIONS CAN ACCESS IT
+	var ansFirst = document.getElementById("answer1st");
+	ansFirst.value = '';
+	var ansSecond = document.getElementById("answer2nd");
+	ansSecond.value = '';
+
         // question 1 is
         var combined1 = first + ' + ' + second + ' ' + '=' ;
         // question 2 is
@@ -51,8 +72,7 @@ function getNumbers(){
         var firstques = question1.innerHTML = combined1;
         // set the inner value of the second question to...
         var secondques = question2.innerHTML = combined2;
-        return firstques;
-        return secondques;
+        
         
         
 }
@@ -83,7 +103,7 @@ function displayInput(){
  
 function keepGoing(){
         wrong.style.display = 'none';
-        right.style.display = 'none';
-        
+        right.style.display = 'none';  
+	getNumbers();
 }
 
