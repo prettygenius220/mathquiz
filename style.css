@@ -36,15 +36,6 @@ div{
     margin: 6%;
 }
 
-
-label{
-    font-size: 10px ;
-    font-family: Tahoma;
-    font-weight: bold;
-    margin-top: -90%;
-    margin-left: 40%;
-}
-
 #score, #time{
     border: none;
     font-size: 20px;
@@ -52,7 +43,7 @@ label{
     outline: none;
 }
 
-.questions{
+#question{
     font-size: 40px;
     font-weight: bold;
     color: red;
@@ -61,16 +52,12 @@ label{
 /* ques div effects */
 #ques{
     white-space: nowrap;
-}
-/* equal to label effects */
-#equalto{
-    font-size: 30px;
-    display: inline;
-    color: blue;
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
 
 /* first answers input effects */
-.answers1{
+#answer{
     border-radius: 3px;
     height: 8%;
     float: right;
@@ -122,38 +109,6 @@ label{
     margin-left: 47%;
 }
 
-
-/* equal to label effects */
-#equalto2{
-    font-size: 40px;
-    display: inline;
-    color: blue;
-}
-
-/* second answers input effects */
-.answers2{
-    border-radius: 3px;
-    height: 8%;
-    float: right;
-    width: 25%;
-    margin-top: -29%;
-    cursor: pointer;
-    padding: 10px;
-    font-size:large;
-    color: red;
-    font-weight: bold;
-}
-/* wrong style */
-#rong{
-    color: red;
-    font-family: sans-serif;
-    margin-left: 70%;
-}
-#ight{
-    color: green;
-    font-family: sans-serif;
-    margin-left: 70%;
-}
 /* tree one effect */
 #htree1{
     float: left;
@@ -183,13 +138,6 @@ label{
    
 
 }
-
-/* start button effects */
-/* #start{
-    width: 90%;
-    margin-top: 100%;
-    margin-left: -120%;
-} */
 
 
 @media(min-width:790px){
@@ -235,13 +183,10 @@ label{
         margin-left:15%;
     }
     /* answers1 effects  */
-    .answers1{
+    #answer{
         margin-top: -20%;
     }
-    /* answers2 effects */
-    .answers2{
-        margin-top: -20%;
-    }
+    
 
     /* htree one effects */
     #htree1{
@@ -259,7 +204,7 @@ label{
         padding: 10px;
     }
     /* questions effects */
-    .questions{
+    #question{
         margin-top: 1%;
     }
 
